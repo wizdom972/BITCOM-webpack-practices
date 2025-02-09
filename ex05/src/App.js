@@ -1,10 +1,14 @@
-import './assets/scss/App.scss';
+import React from "react";
 
 function App() {
-    const App = document.createElement('div');
-    App.textContent = "Hello World!";
-    App.className = "Header";
+    React.createElement(
+        "div",
+        null,
+        "Hello World!",
+        React.createElement("div", null, "test")
+    );
+
     return App;
 }
 
-export {App};
+export { App };
